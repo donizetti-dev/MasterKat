@@ -7,17 +7,42 @@ body{
 header{
     background-color: #714f47;
 }
+
+::selection{
+   background: brown;
+   color: white;
+}
+
 .header{
     display:flex;
     align-items: center;
-    margin-left: 15px;
-    gap: 25%;
+    gap: 23%;
     width: 100%;
     height: 10vh;
 }
+
+.header:first-child{
+    margin-left: 30px;
+}
+
+.header a:nth-child(2){
+   color: #C47A4A;
+}
+
+.header a:nth-child(4){
+   color: #C47A4A;
+}
+
+
 .header a{
-    color: white;
+    color: #d7996f;
     text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header a:hover{
+    color: gold;
+    transition: 0.3s;
 }
 
 .container{
@@ -26,10 +51,19 @@ header{
 
 .title{
     color: #C47A4A;
+    font-family: 'Playfair Display', serif;
 }
+
+.title::before{
+   content: "\e9d1";
+   font-family: 'boxicons';
+   margin-right: 8px;
+}
+
 
 .text{
     color:#E8D3B9;
+    font-family: 'Lato', sans-serif;
 }
 
 #init img{
@@ -49,9 +83,16 @@ header{
     gap: 8%;
 }
 
+
+
 #image{
     width: 250px;
     height: 200px;
     border-radius: 80px;
+}
+
+#image:hover{
+    transform: scale(1.20);
+    transition: 0.3s;
 }
 
